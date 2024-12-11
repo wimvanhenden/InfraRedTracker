@@ -1,0 +1,8 @@
+{
+"tracker_server_ip_address":"localhost", 
+"tracker_server_port":8080,
+"id":1,
+"cameraindex":0,
+"useRecording":true,
+"recordingFile":"c:/tool/topdown_motion_2.mkv"
+}
