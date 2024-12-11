@@ -31,6 +31,12 @@ Download a test video file here:
 
 ## Running binaries
 
+Download the binaries here:
+
+https://github.com/wimvanhenden/InfraRedTracker/releases/tag/v1
+
+The tracker server is not a binary, that is a nodejs websocket server.
+
 ### Tracker
 
 #### Tracker Configuration
@@ -43,12 +49,14 @@ Navigate to the StreamingAssets/config.json file and configure:
 
 #### Tracker UI controls
 Use "Show/Hide Inputs" for advanced controls
+![alt text](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/ui_1.png)
 
 Create tracking areas:
 - Click "Start Setting Area" button
 - Enter a unique ID in the "Set Custom ID" field
 - Use left mouse click to define area corners
 - Up to 4 tracking areas can be set
+![alt text](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/ui_2.png)
 
 ### Tracker Server
 Configure IP address and port in config.json
@@ -65,3 +73,19 @@ Press 'd' to enable debug view for all connected clients.
 Configure IP address and port in StreamingAssets/tracker_config.json
 
 Press 'd' to toggle debug view.
+
+## Building
+### Tracker (Unity project)
+
+#### Purchase and install the following Unity packages
+
+Azure Kinect and Femto Bolt Examples for Unity:
+
+https://assetstore.unity.com/packages/tools/integration/azure-kinect-and-femto-bolt-examples-for-unity-149700
+
+OpenCV for Unity:
+https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088
+
+
+Important: When importing the Kinect Azure package, do not overwrite the KinectManager class
+![alt text](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/kinectmanager.png)
