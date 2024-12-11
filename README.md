@@ -1,6 +1,6 @@
 # Infrared Tracker
 
-A real-time object tracking system that uses Azure Kinect or Orbbec Femto Bolt cameras, built with Unity and Node.js.
+A real-time object tracking system that uses Azure Kinect or Orbbec Femto Bolt cameras, built with Unity and Node.js
 [![Watch the video](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/tracker.gif)](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/tracker.mp4)
 
 To test you can use Infra Red reflective tape on the object you want to track.
