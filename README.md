@@ -4,7 +4,7 @@ A real-time object tracking system that uses Azure Kinect or Orbbec Femto Bolt c
 
 
 
-[![Watch the video](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/thumb.png)](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/tracker.mp4)
+[![Watch the video](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/tracker.gif)](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/tracker.mp4)
 
 ## Overview
 This project provides a complete infrastructure for infrared object tracking, consisting of three main components:
