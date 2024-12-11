@@ -1,6 +1,6 @@
 {
-  "server_ip_address": "10.20.60.112",
-  "server_port": 8085,
+  "server_ip_address": "localhost",
+  "server_port": 8080,
   "id": 1,
   "flipx": false,
   "flipy": true
