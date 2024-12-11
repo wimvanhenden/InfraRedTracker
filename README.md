@@ -72,6 +72,10 @@ Press 'd' to enable debug view for all connected clients.
 
 Configure IP address and port in StreamingAssets/tracker_config.json
 
+Make sure the id corresponds with one of the area id's in the tracker.
+![alt text](https://raw.githubusercontent.com/wimvanhenden/InfraRedTracker/refs/heads/main/images/id_check.png)
+
+
 Press 'd' to toggle debug view.
 
 ## Building
