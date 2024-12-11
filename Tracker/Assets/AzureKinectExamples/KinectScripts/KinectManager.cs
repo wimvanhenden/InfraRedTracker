@@ -3282,7 +3282,7 @@ namespace com.rfilkov.kinect
 
 
         // locates and starts the available depth-sensors and their interfaces
-        public void StartDepthSensors()
+        public void StartDepthSensors(int _index=-1, bool isStreaming = false, string filename = "")
         {
             try
             {
@@ -3351,7 +3351,7 @@ namespace com.rfilkov.kinect
                 }
 
                 // try to open sensor interfaces
-                TryOpenSensors(sensorInts, dwFlags);
+                TryOpenSensors(sensorInts, dwFlags,_index, isStreaming, filename);
 
                 if (sensorDatas.Count == 0)
                 {
@@ -3478,7 +3478,7 @@ namespace com.rfilkov.kinect
 
 
         // tries to open the sensor interfaces
-        private void TryOpenSensors(List<DepthSensorBase> sensorInts, KinectInterop.FrameSource dwFlags)
+        private void TryOpenSensors(List<DepthSensorBase> sensorInts, KinectInterop.FrameSource dwFlags, int _index=-1, bool isStreaming = false, string filename ="")
         {
             for (int i = 0; i < sensorInts.Count; i++)
             {
@@ -3496,6 +3496,21 @@ namespace com.rfilkov.kinect
                     {
                         if (consoleLogMessages)
                             Debug.Log(string.Format("Opening S{0}: {1}, device-index: {2}", i, sensorInt.GetType().Name, sensorInt.deviceIndex));
+
+
+                        if (_index > -1)
+                        {
+
+                            sensorInt.deviceIndex = _index;
+
+                            if (isStreaming)
+                            {
+
+                                sensorInt.deviceStreamingMode = KinectInterop.DeviceStreamingMode.PlayRecording;
+                                sensorInt.recordingFile = filename;
+                            }
+                        }
+
                         KinectInterop.SensorData sensorData = sensorInt.OpenSensor(this, dwFlags, syncDepthAndColor, syncBodyAndDepth);
 
                         if (sensorData != null)
