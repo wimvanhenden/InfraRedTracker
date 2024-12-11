@@ -1,4 +1,4 @@
 {
-    "serverAddress": "10.244.88.75",
+    "serverAddress": "localhost",
     "serverPort": 8080
   }
